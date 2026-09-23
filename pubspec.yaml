@@ -19,7 +19,9 @@ publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 version: 1.0.0+1
 
 environment:
-  sdk: ^3.12.2
+  # Flutter 3.38.x ships with Dart 3.10 and still runs on macOS 12.
+  # Dart 3.12 binaries require macOS 14, so keep this project below 3.12.
+  sdk: ">=3.10.0 <3.12.0"
 
 # Dependencies specify other packages that your package needs in order to work.
 # To automatically upgrade your package dependencies to the latest versions
@@ -38,6 +40,10 @@ dependencies:
 
   flutter_secure_storage: ^10.0.0-beta.4
   http: ^1.5.0
+  firebase_core: ^4.14.0
+  firebase_messaging: ^16.6.0
+  flutter_local_notifications: ^19.5.0
+  timezone: ^0.10.1
 
 dev_dependencies:
   flutter_test:
@@ -61,10 +67,13 @@ flutter:
   # the material Icons class.
   uses-material-design: true
 
-
   assets:
-    - assets/images/
-  
+    - assets/images/arelia_logo.webp
+    - assets/images/arelia_splash_background.png
+    - assets/images/arelia_login_background.png
+    - assets/images/arelia_leads_background.png
+    - assets/images/arelia_lead_details_background.png
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images
 

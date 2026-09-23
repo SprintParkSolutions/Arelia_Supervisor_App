@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "65259048392",
+    "project_id": "areliaspace-supervisor-app",
+    "storage_bucket": "areliaspace-supervisor-app.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:65259048392:android:62fca781696131400c44fd",
+        "android_client_info": {
+          "package_name": "com.example.arelia_supervisor"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKySwzVL5S_yUk4Ra0T05kQDQWxS30uAo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
